@@ -1,0 +1,246 @@
+.pricing{
+  background-color: @color-header;
+
+  &__inner{
+    .container-fixed();
+  }
+
+  &__site{
+    .clearfix();
+  }
+
+  &__site-title{
+    .make-xs-column(12);
+    position: relative;
+    padding-left: 80px;
+    font-size: 25px;
+    color: @color-site-title;
+    font-family: @font_OpenSans_ExtraBold;
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
+
+  &__site-title:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 66px;
+    background-color: @color-site-title;
+    width: 60px;
+    height: 4px;
+  }
+
+
+  &__item{
+    .clearfix();
+    padding-bottom: 15px;
+  }
+
+  &__item-description{
+    .make-xs-column(8);
+    padding-bottom: 10px;
+  }
+
+  &__item-cost{
+    .make-xs-column(4);
+  }
+
+  &__title{
+    .make-row();
+    .clearfix();
+  }
+
+
+  &__name{
+    .make-xs-column(12);
+    text-transform: uppercase;
+    font-family: @font_OpenSans_ExtraBold;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  &__discount-indent{
+    padding-left: 0;
+  }
+
+  &__discount{
+    span{
+      display: none;
+    }
+  }
+
+  &__payment{
+    .make-xs-column(12);
+    text-transform: uppercase;
+    font-family: @font_OpenSans_ExtraBold;
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: @screen-sm){
+
+    &__inner{
+      .container-fixed();
+    }
+
+    &__site{
+      .clearfix();
+    }
+
+    &__site-title{
+      .make-sm-column(12);
+      position: relative;
+      padding-left: 80px;
+      font-size: 25px;
+      padding-top: 50px;
+      padding-bottom: 34px;
+    }
+
+    &__item{
+      font-size: 18px;
+      .clearfix();
+      padding-bottom: 15px;
+    }
+
+    &__item-description{
+      .make-sm-column(7);
+      padding-bottom: 10px;
+    }
+
+    &__item-cost{
+      .make-sm-column-offset(1);
+      .make-sm-column(4);
+    }
+
+    &__title{
+      .make-row();
+      .clearfix();
+    }
+
+
+    &__name{
+      .make-sm-column(12);
+      padding-top: 15px;
+      padding-bottom: 25px;
+      font-size: 18px;
+    }
+
+    &__payment{
+      font-size: 18px;
+      .make-sm-column(12);
+    }
+
+  }
+
+  @media (min-width: @screen-lg){
+    &__inner{
+      .container-large-fixed();
+      padding-top: 30px;
+    }
+
+    &__site-title{
+      .make-lg-column(12);
+      position: relative;
+      padding-left: 131px;
+      font-size: 45px;
+      color: @color-site-title;
+      font-family: @font_OpenSans_ExtraBold;
+      padding-top: 66px;
+      padding-bottom: 40px;
+    }
+
+    &__site-title:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 92px;
+      background-color: @color-site-title;
+      width: 85px;
+      height: 8px;
+    }
+
+
+    &__site{
+      background-repeat: no-repeat;
+    }
+
+    &__site--one{
+      background-image: url('../img/bg1.png');
+    }
+
+    &__site--two{
+      background-image: url('../img/bg2.png');
+    }
+
+    &__site--three{
+      background-image: url('../img/bg3.png');
+    }
+
+    &__item{
+      font-size: @font-item;
+    }
+
+    &__item-description{
+      font-size: @font-item;
+    }
+
+    &__item-cost{
+      font-size: @font-item;
+    }
+
+    &__item{
+      .clearfix();
+      padding-bottom: 15px;
+    }
+
+    &__item-description{
+      .make-lg-column(6);
+      padding-bottom: 10px;
+    }
+
+    &__item-description--width{
+      .make-lg-column(8);
+    }
+
+    &__item-cost{
+      .make-lg-column-offset(1);
+      .make-lg-column(5);
+    }
+
+    &__title{
+      .make-row();
+      .clearfix();
+    }
+
+
+    &__name{
+      .make-lg-column(12);
+      padding-top: 30px;
+      padding-bottom: 25px;
+      font-size: @font-item;
+    }
+
+    &__name--indent{
+      padding-top: 0;
+    }
+
+    &__payment{
+      .make-lg-column(12);
+      font-size: @font-item;
+      padding-top: 75px;
+      padding-bottom: 105px;
+    }
+
+    &__discount{
+      font-size: 22px;
+      span{
+        display: inline-block;
+      }
+    }
+
+    &__discount-indent{
+      padding-left: 118px;
+    }
+
+  }
+}

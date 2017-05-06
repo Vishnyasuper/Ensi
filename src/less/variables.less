@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'PrototypsterMedium';
+    src: url('../fonts/prototypster-medium.woff') format('woff'),
+         url('../fonts/prototypster-medium.ttf') format('truetype'),
+         url('../fonts/prototypster-medium.eot') format('embedded-opentype'),
+         url('../fonts/prototypster-medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'Tahoma Regular';
+    src: url('../fonts/Tahoma-Regular.ttf') format('truetype');
+
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans_Light';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff'),
+         url('../fonts/opensanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans_Bold';
+    src: url('../fonts/opensans_bold.woff2') format('woff2'),
+         url('../fonts/opensans_bold.woff') format('woff');
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans_ExtraBold';
+    src: url('../fonts/opensansextrabold.woff2') format('woff2'),
+         url('../fonts/opensansextrabold.woff') format('woff'),
+         url('../fonts/opensansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/ProximaNovaRegular.woff') format('woff'),
+         url('../fonts/ProximaNovaRegular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font_OpenSans: 'Open Sans';
+@font_OpenSans_Light: 'Open Sans_Light';
+@font_OpenSans_Bold: 'Open Sans_Bold';
+@font_OpenSans_ExtraBold: 'Open Sans_ExtraBold';
+@font_PrototypsterMedium: 'PrototypsterMedium';
+@font_TahomaRegular: 'Tahoma Regular';
+@font_ProximaNovaRegular: 'ProximaNovaRegular';
+
+@font-family:                 'Tahoma Regular', 'Open Sans', sans-serif;
+@font-item:                   24px;
+
+
+@color-header: #dfe4e9;
+@color-title-header: #f8f8f1;
+@color-font-header: #848484;
+@color-title: #16426f;
+@color-title-font: #fdfdfd;
+@color-site-title: #474747;
+@color-footer: #133558;
+@color-font-footer: #ffffff;
+
+
+@color-translate: #cda248;
+@color-header-all: #f2f8fb;
+@color-translate-all: #cda248;
+@color-title-header-all: #010101;
+@color-footer-all: #000000;
+
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  320px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm-min-min:        321px;
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg-min-min:              1169px;
+// @screen-lg-min-min:              769px;
+@screen-lg:                  1170px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             (720px + @grid-gutter-width);
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            (940px + @grid-gutter-width);
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      (1140px + @grid-gutter-width);
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
