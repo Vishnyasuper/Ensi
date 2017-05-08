@@ -42,7 +42,19 @@
 @font-face {
   font-family: 'ProximaNovaRegular';
   src: url('../fonts/ProximaNovaRegular.woff') format('woff'), url('../fonts/ProximaNovaRegular.ttf') format('truetype');
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/ProximaNovaBold.woff') format('woff'), url('../fonts/ProximaNovaBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBlack';
+  src: url('../fonts/ProximaNovaBlack.woff') format('woff'), url('../fonts/ProximaNovaBlack.ttf') format('truetype');
+  font-weight: 800;
   font-style: normal;
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -707,7 +719,8 @@ button {
   font-size: 18px;
   font-family: 'Open Sans_Light';
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 8px;
+  font-weight: 800;
 }
 .main-nav__item:hover a {
   text-decoration: underline;
@@ -872,7 +885,7 @@ button {
   margin: 0 auto;
   width: 100%;
   max-width: 1170px;
-  padding: 20px 0;
+  padding: 15px 0 20px 0;
 }
 .page-footer__items {
   margin-left: -15px;
@@ -1230,7 +1243,8 @@ button {
   font-size: 18px;
   font-family: 'Open Sans_Light';
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 8px;
+  font-weight: 800;
 }
 .main-nav-all__item:hover a {
   text-decoration: underline;
@@ -1258,13 +1272,16 @@ button {
   padding: 20px;
 }
 .about__item-title {
-  font-size: 25px;
+  font-size: 20px;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 4px;
   padding-bottom: 20px;
+  font-family: 'ProximaNovaBold';
 }
 .about__item-blockquote {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 14px;
   color: #000000;
   padding-bottom: 10px;
@@ -1275,7 +1292,7 @@ button {
   display: inline-block;
   width: 194px;
   margin: 0 auto;
-  border: 2px solid #000000;
+  border: 5px solid #000000;
   padding: 10px;
 }
 .about__item-btn-more a {
@@ -1283,6 +1300,8 @@ button {
   color: #000000;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
 }
 /*.about-us{
   height: 100%;
@@ -1327,16 +1346,19 @@ button {
   display: none;
 }
 .gallery__item-title {
+  font-family: 'ProximaNovaBold';
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 800;
 }
 .gallery__item-size {
+  font-family: 'ProximaNovaRegular';
   font-size: 30px;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 .gallery__item-price {
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -1379,24 +1401,33 @@ button {
   position: relative;
   text-align: center;
   color: #000000;
+  width: 225px;
+  height: 440px;
+  margin-bottom: 42px;
+  text-decoration: none;
 }
 .buy__item img {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 .buy__item-skin {
   overflow: hidden;
-  width: 228px;
+  width: 225px;
   height: 290px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  margin-bottom: 25px;
 }
 .buy__item-title {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 800;
   font-size: 24px;
   text-transform: uppercase;
-  font-weight: 800;
 }
 .buy__item-size {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -1405,6 +1436,8 @@ button {
   font-size: 10px;
 }
 .buy__item-price {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -1464,6 +1497,7 @@ button {
 }
 .buy__items-inner {
   padding-bottom: 50px;
+  margin: 0 auto;
 }
 .item {
   padding-top: 30px;
@@ -1488,25 +1522,36 @@ button {
   margin: 0 auto;
 }
 .item__description {
-  margin: 20px 20px 30px 20px;
+  margin: 0 20px 30px 20px;
   text-align: center;
 }
 .item__title {
+  font-family: 'ProximaNovaRegular';
   font-size: 30px;
+  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
 }
 .item__vendor-code {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 20px;
   color: #b4b4b4;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
 .item__size-label {
+  display: inline-block;
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 20px;
   color: #777777;
+  width: 80px;
+  margin-right: 35px;
 }
 .item__size-value {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 20px;
   color: #000000;
   text-transform: uppercase;
@@ -1515,10 +1560,17 @@ button {
   padding-bottom: 10px;
 }
 .item__material-label {
+  display: inline-block;
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 20px;
   color: #777777;
+  width: 80px;
+  margin-right: 35px;
 }
 .item__material-value {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 20px;
   color: #000000;
   text-transform: uppercase;
@@ -1527,27 +1579,40 @@ button {
   padding-bottom: 10px;
 }
 .item__country-label {
+  display: inline-block;
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 20px;
   color: #777777;
+  width: 80px;
+  margin-right: 35px;
 }
 .item__country-value {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 20px;
   color: #000000;
   text-transform: uppercase;
 }
 .item__cost {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 30px;
   color: #777777;
   text-transform: uppercase;
   padding: 26px 0;
 }
 .item__quantity-label {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   display: block;
   font-size: 20px;
   color: #b4b4b4;
   padding-bottom: 20px;
 }
 .item__quantity-table {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   display: inline-block;
   font-size: 20px;
   padding: 15px 70px 15px 20px;
@@ -1558,6 +1623,8 @@ button {
   padding-bottom: 30px;
 }
 .item__add-btn {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 800;
   width: 200px;
   background: #e8c529;
   font-size: 24px;
@@ -1572,12 +1639,16 @@ button {
   border-top: 1px solid #656565;
 }
 .item__features-title {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 800;
   margin: 25px 0;
   font-size: 24px;
   color: #777777;
   text-transform: uppercase;
 }
 .item__features-description {
+  font-family: 'ProximaNovaRegular';
+  font-weight: 600;
   font-size: 18px;
   color: #777777;
   margin-bottom: 45px;
@@ -1829,7 +1900,7 @@ button {
     justify-content: center;
   }
   .main-nav__item a {
-    padding: 10px 10px;
+    padding: 10px 8px;
   }
   .pricing__inner {
     margin-right: auto;
@@ -1972,7 +2043,7 @@ button {
   }
   .logo__title {
     padding-top: 435px;
-    padding-bottom: 180px;
+    padding-bottom: 165px;
     font-size: 48px;
     margin: 0 auto;
     text-align: center;
@@ -1981,6 +2052,10 @@ button {
     background-image: url('../img/logo.png');
     width: 325px;
     height: 325px;
+    top: 60px;
+  }
+  .page-header-all {
+    padding: 15px 50px 0 50px;
   }
   .page-header-all__inner {
     display: -ms-flexbox;
@@ -2035,10 +2110,11 @@ button {
     flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
   }
   .main-nav-all__logo {
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
   }
   .main-nav-all__list {
     display: -ms-flexbox;
@@ -2082,7 +2158,7 @@ button {
     display: inline-block;
     width: 194px;
     margin: 0 auto;
-    border: 2px solid #000000;
+    border: 5px solid #000000;
     padding: 10px;
   }
   .about__item-btn-more a {
@@ -2108,8 +2184,8 @@ button {
     width: 250px;
   }
   .buy {
-    margin-top: 70px;
-    margin-bottom: 57px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .buy__items {
     display: -ms-flexbox;
@@ -2126,8 +2202,8 @@ button {
   }
   .buy__item {
     width: 225px;
-    height: 410px;
-    margin: 12px;
+    height: 440px;
+    margin: 22px 12px 7px 12px;
   }
   .buy__items-inner {
     padding-bottom: 0;
@@ -2680,6 +2756,9 @@ button {
   .page-footer-all {
     padding: 0;
   }
+  .page-footer-all__inner {
+    padding: 39px 0 40px 0;
+  }
   .page-footer-all__items {
     -ms-flex-direction: row;
     flex-direction: row;
@@ -2702,13 +2781,13 @@ button {
     flex-basis: 260px;
   }
   .page-footer-all__phone-back {
-    padding-bottom: 35px;
+    padding-bottom: 27px;
   }
   .page-footer-all__address {
-    padding-bottom: 35px;
+    padding-bottom: 27px;
   }
   .page-footer-all__email {
-    padding-bottom: 60px;
+    padding-bottom: 52px;
   }
   .main-nav-all {
     display: -ms-flexbox;
@@ -2717,6 +2796,7 @@ button {
     flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
   }
   .main-nav-all__logo {
     display: inline-block;
@@ -2751,21 +2831,21 @@ button {
     padding: 20px 0 40px 0;
   }
   .about__item-title {
-    font-size: 40px;
+    font-size: 60px;
     letter-spacing: 8px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
   .about__item-blockquote {
     margin: 0 auto;
     width: 370px;
     font-size: 20px;
-    padding-bottom: 23px;
+    padding-bottom: 35px;
   }
   .about__item-btn-more {
     display: inline-block;
     width: 194px;
     margin: 0 auto;
-    border: 2px solid #000000;
+    border: 5px solid #000000;
     padding: 10px;
   }
   .about__item-btn-more a {
@@ -2807,7 +2887,7 @@ button {
     flex-grow: 3;
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
-    padding-top: 40px;
+    padding-top: 66px;
   }
   .buy__item-skin {
     overflow: hidden;
@@ -2816,8 +2896,8 @@ button {
   }
   .buy__item {
     width: 260px;
-    height: 410px;
-    margin: 22px;
+    height: 440px;
+    margin: 22px 12px 7px 12px;
   }
   .item {
     padding-top: 0;
@@ -2850,6 +2930,9 @@ button {
   .item__description {
     text-align: left;
     margin-left: 45px;
+  }
+  .item__add-btn {
+    width: 100%;
   }
   .toggler {
     display: none;
