@@ -129,3 +129,13 @@ loadFont(
     '/css/font_opensans_woff.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
 
    );
+loadFont(
+    'ProximaNovaBold',                      // название шрифта
+    '/css/font_opensans_woff.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+
+   );
+loadFont(
+    'ProximaNovaBlack',                      // название шрифта
+    '/css/font_opensans_woff.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+
+   );
