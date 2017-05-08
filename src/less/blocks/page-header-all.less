@@ -3,6 +3,7 @@
 
   background-color: @color-header-all;
   padding: 15px 50px;
+  //position: relative;
   &__inner{
     .container-large-fixed();
     display: flex;
@@ -12,7 +13,7 @@
 
   &__translate{
     display: inline-block;
-    padding: 70px 0 0 0;
+    padding: 30px 0 20px 0;
     text-decoration: none;
     text-align: center;
     a{
@@ -25,17 +26,47 @@
     }
   }
 
+  &__translate-en:hover{
+    text-decoration: underline;
+  }
+
+  &__translate-cz:hover{
+    text-decoration: underline;
+  }
+
+  &__translate-en:active{
+    text-decoration: underline;
+  }
+
+  &__translate-cz:active{
+    text-decoration: underline;
+  }
+
+  &--active {
+    border-bottom: none;
+  }
+
   &__buy{
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
   }
 
   @media (min-width: @screen-sm){
-    margin-bottom: 80px;
+    //margin-bottom: 80px;
     &__inner{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+  }
+
+  @media (min-width: @screen-lg){
+    &__translate{
+      padding: 70px 0 0 0;
+    }
+
+    &__buy{
+      padding-top: 60px;
     }
   }
 }

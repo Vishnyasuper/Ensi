@@ -1,5 +1,37 @@
 .main-nav{
+  display: none;
   //padding: 90px;
+  &--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  &__list{
+
+
+    &--active {
+        text-align: left;
+        list-style: none;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: @color-footer-all;
+        width: 100%;
+        border-top: 1px solid @color-header-all;
+        z-index: 1;
+
+        a{
+          font-family: @font_ProximaNovaRegular;
+          color: @color-title-header-all;
+          font-weight: 400;
+          font-size: 14px;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+  }
 
   &__list{
     display: flex;
@@ -22,8 +54,16 @@
     }
   }
 
+  &__item:hover{
+    a{
+      text-decoration: underline;
+    }
+  }
+
   @media (min-width: @screen-sm){
+    display: flex;
     &__list{
+      display: flex;
       flex-direction: row;
       justify-content: center;
     }

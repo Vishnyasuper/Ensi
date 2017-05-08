@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <title>About us</title>
+    <title>Item</title>
     <link rel="stylesheet" href="css/style.css">
     <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
     <script>@@include('fonts/font_loading.js')</script>
@@ -25,9 +25,9 @@
         </div>
         <ul class="main-nav-all__list" id="main-nav-all__list">
           <li class="main-nav-all__item"><a href="index.html">Home</a></li>
-          <li class="main-nav-all__item"><a href="#">About us</a></li>
+          <li class="main-nav-all__item"><a href="about.html">About us</a></li>
           <li class="main-nav-all__item"><a href="gallery.html">Gallery</a></li>
-          <li class="main-nav-all__item"><a href="buy.html">Buy</a></li>
+          <li class="main-nav-all__item"><a href="#">Buy</a></li>
         </ul>
       </nav>
       <a href="#" class="toggler" id="toggler"><span class="toggler__icon"></span></a>
@@ -37,46 +37,54 @@
     </div>
   </div>
   <main>
-    <div class="about">
-      <div class="about__inner">
-        <div class="about__items">
-          <div class="about__item about__item--right">
-            <img src="img/item1.jpg" alt="ковер">
-          </div>
-          <div class="about__item about__item-description">
-            <div class="about__item-title">Philosophy</div>
-            <div class="about__item-blockquote">“Each rug has its own soul, its own personality. Each of them has an amazing energy...”</div>
-            <div class="about__item-btn-more">
-              <a href="#">Learn more</a>
-            </div>
+  <div class="item">
+    <div class="item__inner">
+      <div class="item__picture">
+        <div class="item__img">
+          <div class="item__img-skin">
+            <img src="img/item-big1.jpg" alt="образец ковра">
           </div>
         </div>
-        <div class="about__items about__items--reverse">
-          <div class="about__item about__item-description">
-            <div class="about__item-title">History</div>
-            <div class="about__item-blockquote">In our 28-year history, we have never stopped collecting, exploring and creating rugs by our own sketches.energy...”</div>
-            <div class="about__item-btn-more">
-              <a href="#">Learn more</a>
-            </div>
-          </div>
-          <div class="about__item about__item--left">
-            <img src="img/item4.jpg" alt="ковер">
-          </div>
+
+        <div class="item__gallery"></div>
+      </div>
+      <div class="item__description">
+        <div class="item__title">Seville I</div>
+        <div class="item__vendor-code">SKU: 12345</div>
+        <div class="item__size">
+          <span class="item__size-label">Size</span>
+          <span class="item__size-value">2.40x3.00</span>
         </div>
-        <div class="about__items">
-          <div class="about__item about__item--right">
-            <img src="img/item5.jpg" alt="ковер">
-          </div>
-          <div class="about__item about__item-description">
-            <div class="about__item-title">What we do</div>
-            <div class="about__item-blockquote">We will choose a unique, specific rug for you. <br/>We will get involved our designers to find the best solution for you.</div>
-            <div class="about__item-btn-more">
-              <a href="#">Learn more</a>
-            </div>
-          </div>
+        <div class="item__material">
+          <span class="item__material-label">Material</span>
+          <span class="item__material-value">Wool</span>
         </div>
+        <div class="item__country">
+          <span class="item__country-label">Country</span>
+          <span class="item__country-value">India</span>
+        </div>
+        <div class="item__cost">400$</div>
+        <div class="item__quantity">
+          <span class="item__quantity-label">Quantity</span>
+          <div class="item__quantity-table">1</div>
+        </div>
+        <div class="item__add-btn">Add to cart</div>
+        <div class="item__features">
+          <div class="item__features-title">Overview</div>
+          <div class="item__features-description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit.</div>
+        </div>
+        <div class="item__features">
+          <div class="item__features-title">Details</div>
+          <div class="item__features-description"></div>
+        </div>
+        <div class="item__features">
+          <div class="item__features-title">Shipping and return policy</div>
+          <div class="item__features-description"></div>
+        </div>
+
       </div>
     </div>
+  </div>
 
   </main>
   <!-- footer -->
