@@ -142,23 +142,24 @@ loadFont(
 <body>
   <div class="about-us">
   <!-- header -->
-  <div class="page-header-all">
+  <div class="page-header-all" id="page-header-all">
     <div class="page-header-all__inner">
       <div class="page-header-all__translate">
         <a href="#" class="page-header-all__translate-en">en</a>
         <a href="#" class="page-header-all__translate-cz">cz</a>
       </div>
-      <nav class="main-nav-all">
+      <nav class="main-nav-all" id="main-nav-all">
         <div class="main-nav-all__logo">
           <img src="img/header-logo.png" alt="Логотип">
         </div>
-        <ul class="main-nav-all__list">
-          <li class="main-nav-all__item"><a href="#">Home</a></li>
+        <ul class="main-nav-all__list" id="main-nav-all__list">
+          <li class="main-nav-all__item"><a href="index.html">Home</a></li>
           <li class="main-nav-all__item"><a href="#">About us</a></li>
-          <li class="main-nav-all__item"><a href="#">Gallery</a></li>
-          <li class="main-nav-all__item"><a href="#">Buy</a></li>
+          <li class="main-nav-all__item"><a href="gallery.html">Gallery</a></li>
+          <li class="main-nav-all__item"><a href="buy.html">Buy</a></li>
         </ul>
       </nav>
+      <a href="#" class="toggler" id="toggler"><span class="toggler__icon"></span></a>
       <div class="page-header-all__buy">
         <img src="img/basket.png" alt="корзина для покупок">
       </div>
@@ -168,7 +169,7 @@ loadFont(
     <div class="about">
       <div class="about__inner">
         <div class="about__items">
-          <div class="about__item">
+          <div class="about__item about__item--right">
             <img src="img/item1.jpg" alt="ковер">
           </div>
           <div class="about__item about__item-description">
@@ -187,12 +188,12 @@ loadFont(
               <a href="#">Learn more</a>
             </div>
           </div>
-          <div class="about__item">
+          <div class="about__item about__item--left">
             <img src="img/item4.jpg" alt="ковер">
           </div>
         </div>
         <div class="about__items">
-          <div class="about__item">
+          <div class="about__item about__item--right">
             <img src="img/item5.jpg" alt="ковер">
           </div>
           <div class="about__item about__item-description">
