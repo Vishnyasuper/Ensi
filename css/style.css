@@ -610,7 +610,7 @@ button {
   outline: none;
 }
 .page-header {
-  padding: 90px;
+  padding: 55px 0 60px 0;
 }
 .page-header__inner {
   margin: 0 auto;
@@ -651,6 +651,7 @@ button {
 }
 .page-header__buy {
   text-align: center;
+  padding: 30px;
 }
 .page-header--active {
   border-bottom: none;
@@ -1801,6 +1802,9 @@ button {
   .col-sm-offset-0 {
     margin-left: 0%;
   }
+  .page-header {
+    padding: 90px;
+  }
   .page-header__inner {
     display: -ms-flexbox;
     display: flex;
@@ -1808,6 +1812,9 @@ button {
     flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+  .page-header__buy {
+    padding: 0;
   }
   .main-nav {
     display: -ms-flexbox;
