@@ -72,6 +72,22 @@ gulp.task('img', function () {
     .pipe(gulp.dest(dirs.build + '/img'));                  // записываем файлы (путь из константы)
 });
 
+// ЗАДАЧА: Копирование и оптимизация видео
+gulp.task('mp4', function () {
+  return gulp.src([
+    dirs.source + '/video/*.{mp4}',          // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+    ],
+    {since: gulp.lastRun('mp4')                             // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
+  })
+    .pipe(newer(dirs.build + '/video'))                       // оставить в потоке только новые файлы (сравниваем с содержимым папки билда)
+    .pipe(imagemin({                                        // обрабатываем
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
+    }))
+    .pipe(gulp.dest(dirs.build + '/video'));                  // записываем файлы (путь из константы)
+});
+
 // ЗАДАЧА: Копирование шрифтов
 gulp.task('fonts:copy', function () {
   console.log('---------- Копирование шрифтов');
@@ -174,7 +190,7 @@ gulp.task('css:fonts:woff2', function (callback) {
 // ЗАДАЧА: Сборка всего
 gulp.task('build', gulp.series(                             // последовательно:
   'clean',                                                  // последовательно: очистку папки сборки
-  gulp.parallel('less', 'img', 'js', 'svgstore', 'fonts:copy', 'css:fonts:woff', 'css:fonts:woff2'),    // параллельно: компиляцию стилей, ...
+  gulp.parallel('less', 'img', 'mp4', 'js', 'svgstore', 'fonts:copy', 'css:fonts:woff', 'css:fonts:woff2'),    // параллельно: компиляцию стилей, ...
   'html'                                                    // последовательно: сборку разметки
 ));
 
@@ -205,6 +221,11 @@ gulp.task('serve', gulp.series('build', function() {
   gulp.watch(                                               // следим за изображениями
     dirs.source + '/img/*.{gif,png,jpg,jpeg,svg}',
     gulp.series('img', reloader)                            // при изменении оптимизируем, копируем и обновляем в браузере
+  );
+
+  gulp.watch(                                               // следим за изображениями
+    dirs.source + '/video/*.{mp4}',
+    gulp.series('mp4', reloader)                            // при изменении оптимизируем, копируем и обновляем в браузере
   );
 
   gulp.watch(                                               // следим за JS
