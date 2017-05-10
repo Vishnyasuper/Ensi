@@ -4,12 +4,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @font-face {
-  font-family: 'PrototypsterMedium';
-  src: url('../fonts/prototypster-medium.woff') format('woff'), url('../fonts/prototypster-medium.ttf') format('truetype'), url('../fonts/prototypster-medium.eot') format('embedded-opentype'), url('../fonts/prototypster-medium.svg') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Tahoma Regular';
   src: url('../fonts/Tahoma-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -31,12 +25,6 @@
   font-family: 'Open Sans_Bold';
   src: url('../fonts/opensans_bold.woff2') format('woff2'), url('../fonts/opensans_bold.woff') format('woff');
   font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans_ExtraBold';
-  src: url('../fonts/opensansextrabold.woff2') format('woff2'), url('../fonts/opensansextrabold.woff') format('woff'), url('../fonts/opensansextrabold.ttf') format('truetype');
-  font-weight: 800;
   font-style: normal;
 }
 @font-face {
@@ -1030,14 +1018,6 @@ button {
   min-height: 100%;
   overflow: hidden;
 }
-.main-picture p {
-  font-family: 'courgette';
-  color: #fff;
-  font-size: 80px;
-  text-align: center;
-  padding-top: 20%;
-  text-shadow: 0 1px 1px #000a33;
-}
 .about__items {
   display: -ms-flexbox;
   display: flex;
@@ -1254,6 +1234,10 @@ button {
   padding-top: 17px;
   padding-bottom: 8px;
 }
+.buy__filter-line input {
+  width: 250px;
+  color: #000000;
+}
 .buy__filter-line-start,
 .buy__filter-line-end {
   display: inline-block;
@@ -1264,16 +1248,10 @@ button {
   margin-bottom: -5px;
   font-size: 0;
 }
-.buy__filter-line-basis {
-  display: inline-block;
-  width: 182px;
-  border-top: 2px solid #000000;
-  font-size: 0;
-}
 .buy__filter-start {
   display: inline-block;
   font-size: 18px;
-  padding-right: 45px;
+  padding-right: 80px;
 }
 .buy__filter-end {
   display: inline-block;
@@ -1409,6 +1387,7 @@ button {
   padding-bottom: 30px;
 }
 .item__add-btn {
+  display: block;
   font-family: 'ProximaNovaRegular';
   font-weight: 800;
   width: 200px;
@@ -1420,6 +1399,7 @@ button {
   padding: 15px;
   margin: 0 auto;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 .item__features {
   border-top: 1px solid #656565;
