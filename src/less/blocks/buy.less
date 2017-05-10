@@ -70,7 +70,7 @@
   &__title-line{
     margin: 25px 0;
     border-bottom: 1px solid @color-footer-all;
-    //height: 1px;
+
   }
 
   &__filter-title{
@@ -82,6 +82,10 @@
   &__filter-line{
     padding-top: 17px;
     padding-bottom: 8px;
+    input{
+      width: 250px;
+      color: @color-footer-all;
+    }
   }
 
    &__filter-line-start, &__filter-line-end{
@@ -94,17 +98,10 @@
     font-size: 0;
    }
 
-   &__filter-line-basis{
-    display: inline-block;
-    width: 182px;
-    border-top: 2px solid @color-footer-all;
-    font-size: 0;
-   }
-
    &__filter-start{
     display: inline-block;
     font-size: 18px;
-    padding-right: 45px;
+    padding-right: 80px;
    }
 
    &__filter-end{
@@ -173,7 +170,7 @@
     &__filter{
       flex-basis: 25%;
       flex-grow: 1;
-      //margin-right: 22px;
+
     }
 
     &__items-inner{

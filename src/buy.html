@@ -5,10 +5,6 @@
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <title>Buy</title>
     <link rel="stylesheet" href="css/style.css">
-    <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
-    <script>@@include('fonts/font_loading.js')</script>
-    <!--DEV  Резервное подключение CSS -файла с WOFF шрифтом на случай отключенного JS -->
-    <noscript><link rel="stylesheet" href="css/font_opensans_woff2.css"></noscript>
 </head>
 <body>
   <div class="about-us">
@@ -47,9 +43,8 @@
           <div class="buy__filter-item">
             <div class="buy__filter-title">Price</div>
             <div class="buy__filter-line">
-              <div class="buy__filter-line-start"></div>
-              <div class="buy__filter-line-basis"></div>
-              <div class="buy__filter-line-end"></div>
+              <input type="range" min="0" max="27000" id="size"
+      value="10000">
             </div>
             <div class="buy__filter-cost">
               <div class="buy__filter-start">27.000,00</div>

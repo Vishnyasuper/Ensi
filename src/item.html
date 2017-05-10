@@ -5,10 +5,6 @@
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <title>Item</title>
     <link rel="stylesheet" href="css/style.css">
-    <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
-    <script>@@include('fonts/font_loading.js')</script>
-    <!--DEV  Резервное подключение CSS -файла с WOFF шрифтом на случай отключенного JS -->
-    <noscript><link rel="stylesheet" href="css/font_opensans_woff2.css"></noscript>
 </head>
 <body>
   <div class="about-us">
@@ -54,20 +50,12 @@
   <div class="item">
     <div class="item__inner">
       <div class="item__picture">
-        <!-- <div class="item__img">
-          <div class="item__img-skin">
-            <img src="img/item-big1.jpg" alt="образец ковра">
-          </div>
-        </div> -->
 
         <div class="item__gallery">
 
             <div class="item__gallery-inner">
               <div id="gallery_large" class="item__gallery-img owl-carousel"><div class="item__gallery-img-skin"><img src="img/item-big1.jpg" alt="Образец ковра" class="item__gallery-photo" id="gallery-large-img"></div></div>
-
-              <!-- <div id="gallery-large"></div> -->
               <div id="gallery" class="item__gallery-items owl-carousel">
-               <!-- <div id="gallery" class="gallery__items slick-slider"> -->
 
                <div class="item__gallery-item"><img data-large-img-url="img/item-big1.jpg" src="img/item-big1.jpg" width="94" height="100"  alt="галерея"></div>
                <div class="item__gallery-item"><img data-large-img-url="img/item-big2.jpg" src="img/item-big2.jpg" width="94" height="100"  alt="галерея"></div>
@@ -101,7 +89,9 @@
           <span class="item__quantity-label">Quantity</span>
           <div class="item__quantity-table">1</div>
         </div>
-        <div class="item__add-btn">Add to cart</div>
+        <form action="">
+          <btn class="item__add-btn">Add to cart</btn>
+        </form>
         <div class="item__features">
           <div class="item__features-title">Overview</div>
           <div class="item__features-description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit.</div>
